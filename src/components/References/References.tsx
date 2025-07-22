@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react";
 import ReferenceCard from "./ReferenceCard";
 import styles from "./References.module.css";

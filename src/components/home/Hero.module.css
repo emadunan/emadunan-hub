@@ -1,54 +1,57 @@
 .section {
-  padding: 4rem 1.5rem;
+  padding: 4rem 2rem;
   background-color: var(--background);
   color: var(--text);
 }
 
 .container {
-  max-width: 75rem;
-  margin: 0 auto;
   display: flex;
-  flex-direction: column-reverse;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
+  max-width: 1200px;
+  min-height: calc(100vh - 16rem);
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .text {
-  text-align: center;
+  flex: 1 1 50%;
+  text-align: left;
 }
 
 .heading {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  font-family: var(--font-serif, "Georgia", serif);
   margin-bottom: 1rem;
-  color: var(--accent);
+  color: var(--accent, var(--text));
 }
 
 .subheading1 {
   font-size: 1.25rem;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1rem;
-  max-width: 37.5rem;
-  /* margin-inline: auto; */
+  max-width: 38rem;
   color: var(--text);
 }
 
 .subheading2 {
+  font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  max-width: 37.5rem;
+  max-width: 38rem;
   color: var(--gray-hover);
 }
 
 .cta {
   background-color: var(--primary);
-  color: var(--min);
+  color: var(--on-primary, #fff);
   padding: 0.75rem 1.5rem;
-  border-radius: 2px;
+  border-radius: 4px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
   display: inline-block;
 }
 
@@ -57,6 +60,7 @@
 }
 
 .imageContainer {
+  flex: 1 1 40%;
   max-width: 400px;
   width: 100%;
 }
@@ -66,26 +70,23 @@
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 48em) {
   .container {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: column-reverse;
+    text-align: center;
+    min-height: calc(100vh - 15rem);
   }
 
   .text {
-    flex: 1;
-    text-align: left;
-  }
-
-  .imageContainer {
-    flex: 1;
+    text-align: center;
   }
 
   .heading {
-    font-size: 3rem;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
   }
 
-  .subheading {
-    font-size: 1.125rem;
+  .imageContainer {
+    max-width: 300px;
   }
 }

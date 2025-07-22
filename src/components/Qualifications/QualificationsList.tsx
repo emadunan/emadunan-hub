@@ -1,7 +1,7 @@
 import React from "react";
 import Qualification from "./Qualification";
 import styles from "./QualificationsList.module.css";
-import qualifications from "../../data/qualifications.json";
+import { qualifications } from "./qualifications.data";
 
 const QualificationsList: React.FC = () => {
   return (
