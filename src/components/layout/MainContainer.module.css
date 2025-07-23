@@ -1,9 +1,9 @@
 .container {
-  margin: 4rem 0 4rem 0;
+  padding: 2rem;
 }
 
 @media (max-width: 37.5em) {
   .container {
-    margin: 4rem 0 3rem 0;
+    padding: 1rem;
   }
 }
