@@ -6,6 +6,7 @@ export PATH=$HOME/.nvm/versions/node/v22.14.0/bin:$PATH
 
 pm2 delete emadunan-hub || true
 
+cd ..
 npm run clean
 npm install
 npm run build
