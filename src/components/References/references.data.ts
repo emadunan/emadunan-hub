@@ -318,6 +318,12 @@ export const referencesData: Record<
       link: "https://www.ssh.com/",
     },
     {
+      title: "Shadowsocks-libev",
+      description:
+        "A lightweight and secure SOCKS5 proxy designed to bypass internet censorship. Built on modern encryption algorithms, it's widely used for personal proxying and freedom of access.",
+      link: "https://github.com/shadowsocks/shadowsocks-libev",
+    },
+    {
       title: "OAuth 2.0",
       description:
         "An open standard for access delegation, widely used for secure authorization across web and mobile platforms.",
@@ -349,7 +355,7 @@ export const referencesData: Record<
     {
       title: "SpiderFoot",
       description: "An open-source OSINT automation tool that scans domains, IPs, emails, and more to gather intelligence from hundreds of sources automatically.",
-      link: "https://www.spiderfoot.net/"
+      link: "https://github.com/smicallef/spiderfoot"
     },
     {
       title: "theHarvester",

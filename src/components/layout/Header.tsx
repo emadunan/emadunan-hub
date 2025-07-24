@@ -20,6 +20,7 @@ const Header: React.FC = () => {
       match: "/my-qualifications",
     },
     { to: "/my-quotes", label: "My Quotes", match: "/my-quotes" },
+    // { to: "/tools", label: "Tools", match: "/tools" },
   ];
 
   return (
