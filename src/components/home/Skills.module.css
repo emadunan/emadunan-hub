@@ -51,8 +51,10 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .grid {
     grid-template-columns: 1fr;
+    padding: 0 2rem 2rem 2rem;
   }
 }
+
