@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
             📱 Registered Android Developer on Google Play and Huawei AppGallery, with experience publishing real-world mobile apps across multiple platforms.
           </p> */}
 
-            <a href="#contact" className={styles.cta}>
+            <a href="#footer" className={styles.cta}>
               Let’s Work Together
             </a>
           </div>
