@@ -4,18 +4,18 @@ import Link from 'next/link';
 import styles from './page.module.css';
 import MainContainer from '@/components/layout/MainContainer';
 
-const ToolsPage = () => {
+const LabPage = () => {
   return (
     <MainContainer>
       <div className={styles.container}>
-        <h1 className={styles.title}>🛠️ Emadunan Tools & Services</h1>
+        <h1 className={styles.title}>🛠️ Emadunan Lab</h1>
         <p className={styles.description}>
           Explore free practical tools built with care to support your work, study, and creativity.
         </p>
 
         <ul className={styles.list}>
           <li>
-            <Link href="/tools/tts" className={styles.link}>
+            <Link href="/lab/tts" className={styles.link}>
               🎙️ Text-to-Speech Converter
             </Link>
           </li>
@@ -25,4 +25,4 @@ const ToolsPage = () => {
   );
 };
 
-export default ToolsPage;
+export default LabPage;
