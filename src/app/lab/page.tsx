@@ -10,7 +10,7 @@ const LabPage = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>🛠️ Emadunan Lab</h1>
         <p className={styles.description}>
-          Explore free practical tools built with care to support your work, study, and creativity.
+          Explore a sandbox of ideas — tools designed for prototyping, testing, and learning.
         </p>
 
         <ul className={styles.list}>

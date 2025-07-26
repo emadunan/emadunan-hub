@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from './tts.module.css';
 import MainContainer from '@/components/layout/MainContainer';
 import NavigationGuard from '@/providers/navigation-guard';
-import { Spinner } from '@amen24/ui';
+import Spinner from '@/components/ui/Spinner';
 
 const MAX_CHARS = 2000;
 
@@ -85,8 +85,17 @@ const TTSPage = () => {
             className={styles.button}
             disabled={loading || !text.trim()}
           >
-            {loading ? <><Spinner /><span>Processing...</span></> : <span>Convert to Speech</span>}
+            {loading ? (
+              <span style={{display: 'flex', justifyContent: "center", alignItems: "center", gap: "1rem"}}>
+                <Spinner inline />
+                <span>Processing...</span>
+              </span>
+            ) : (
+              <span>Convert to Speech</span>
+            )}
           </button>
+
+          {loading && <p style={{marginTop: "1rem", color: "var(--danger)"}}>Please do not leave or refresh the page, or you will loss all text to speech conversion progress!</p>}
 
           {audioUrls.length > 0 && (
             <div className={styles.playerSection}>

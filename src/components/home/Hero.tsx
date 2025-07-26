@@ -15,14 +15,10 @@ const Hero: React.FC = () => {
               scalable APIs, clean UIs, and production-ready apps for both web and
               mobile platforms.
             </p>
-            <p className={styles.subheading2}>
-              📱 Registered Google Play Developer with experience publishing
-              real-world Android apps.
-            </p>
 
-            {/* <p className={styles.subheading2}>
+            <p className={styles.subheading2}>
             📱 Registered Android Developer on Google Play and Huawei AppGallery, with experience publishing real-world mobile apps across multiple platforms.
-          </p> */}
+          </p>
 
             <a href="#footer" className={styles.cta}>
               Let’s Work Together
