@@ -80,7 +80,8 @@ const Footer: React.FC = () => {
           <a href="tel:+201003379933">+20 100 337 9933</a>
         </li>
         <li>
-          <strong>Location:</strong> Egypt, Cairo
+          <strong>Location:</strong>
+          <address>Egypt, Cairo</address>
         </li>
       </ul>
     </footer>

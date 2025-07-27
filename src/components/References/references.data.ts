@@ -47,7 +47,7 @@ export const referencesData: Record<
     {
       title: "Redux Toolkit",
       description:
-        "The official, recommended way to write Redux logic. Simplifies store setup, reduces boilerplate, and includes powerful tools like createSlice and createAsyncThunk.",
+        "The official, recommended way to write Redux logic. Simplifies store setup, reduces boilerplate, and includes powerful tools like createSlice.",
       link: "https://redux-toolkit.js.org/",
     },
     {

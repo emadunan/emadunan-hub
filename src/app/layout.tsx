@@ -4,6 +4,7 @@ import Header from "@/components/layout/Header";
 import styles from './page'
 import Footer from "@/components/layout/Footer";
 import Main from "@/components/layout/Main";
+import ThemeToggle from "@/components/ui/ThemeToggler";
 
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Header />
         <Main>
           {children}
+          <ThemeToggle />
         </Main>
         <Footer />
       </body>

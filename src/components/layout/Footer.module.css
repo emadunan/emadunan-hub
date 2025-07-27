@@ -50,6 +50,16 @@
   color: var(--accent-hover);
 }
 
+.infoList address {
+  color: var(--accent);
+  margin-top: 0.25rem;
+  font-style: normal;
+}
+
+.infoList address:hover {
+  color: var(--accent-hover);
+}
+
 @media (max-width: 50rem) {
   .infoList {
     grid-template-columns: 1fr 1fr;

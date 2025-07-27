@@ -21,7 +21,7 @@
   border-left: 4px solid var(--primary);
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(var(--gray-rgb), 0.05);
-  background-color: var(--card, #fff);
+  background-color: var(--background);
   position: relative;
 }
 
@@ -30,7 +30,7 @@
   top: -0.75rem;
   left: -0.75rem;
   background-color: var(--primary);
-  color: white;
+  color: var(--background);
   padding: 0.3rem 0.75rem;
   font-weight: bold;
   border-radius: 2px;
