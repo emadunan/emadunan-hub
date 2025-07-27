@@ -64,6 +64,10 @@
   --color-backend: #dbeafe;
   --color-backend-hover: #bfdbfe;
 
+  /* AI */
+  --color-ai: #e0d7ff;
+  --color-ai-hover: #c0b3ff;
+
   /* DevOps / Testing */
   --color-devops: #e2e8f0;
   --color-devops-hover: #cbd5e1;
@@ -159,6 +163,9 @@
 
   --color-backend: #1f2e42;
   --color-backend-hover: #2d3e5a;
+
+  --color-ai: #2b1d47;
+  --color-ai-hover: #3c2566;
 
   --color-devops: #2c2c3e;
   --color-devops-hover: #3b3b53;

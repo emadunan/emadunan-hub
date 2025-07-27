@@ -92,6 +92,17 @@
   box-shadow: 0 6px 16px rgba(59, 130, 246, 0.25);
 }
 
+.category_aimachinelearning {
+  background-color: var(--color-ai);
+  border-color: #8b5cf6;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.15);
+}
+
+.category_aimachinelearning:hover {
+  background-color: var(--color-ai-hover);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.25);
+}
+
 .category_devopstesting {
   background-color: var(--color-devops);
   border-color: #64748b;
