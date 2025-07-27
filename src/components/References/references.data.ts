@@ -210,6 +210,20 @@ export const referencesData: Record<
       link: "https://socket.io/",
     },
   ],
+  "AI / Machine Learning": [
+    {
+      title: "OpenAI",
+      description:
+        "AI research and deployment company offering APIs for language models, embeddings, image generation, and more.",
+      link: "https://openai.com/",
+    },
+    {
+      title: "Coqui TTS",
+      description:
+        "An open-source deep learning library for text-to-speech synthesis. Supports multiple languages, voices, and speaker cloning.",
+      link: "https://github.com/coqui-ai/TTS",
+    },
+  ],
   "DevOps / Testing": [
     {
       title: "Ubuntu",
@@ -286,12 +300,6 @@ export const referencesData: Record<
   ],
   "Cloud Platforms / Developer Consoles": [
     {
-      title: "OpenAI",
-      description:
-        "AI research and deployment company offering APIs for language models, embeddings, image generation, and more.",
-      link: "https://openai.com/",
-    },
-    {
       title: "Google Cloud Console",
       description:
         "Web-based UI for managing Google Cloud services including compute, storage, databases, and APIs.",
@@ -320,7 +328,7 @@ export const referencesData: Record<
     {
       title: "Shadowsocks-libev",
       description:
-        "A lightweight and secure SOCKS5 proxy designed to bypass internet censorship. Built on modern encryption algorithms, it's widely used for personal proxying and freedom of access.",
+        "A secure, lightweight SOCKS5 proxy for bypassing censorship. Uses modern encryption and is widely used for private browsing and open internet access.",
       link: "https://github.com/shadowsocks/shadowsocks-libev",
     },
     {
