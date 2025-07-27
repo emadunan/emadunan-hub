@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import styles from "./ThemeToggler.module.css";
-import { MdOutlineLightMode } from "react-icons/md"
-	import { FiMoon } from "react-icons/fi"
+import { FiMoon, FiSun } from "react-icons/fi";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("light");
@@ -29,11 +28,7 @@ export default function ThemeToggle() {
       onClick={toggleTheme}
       aria-label="Toggle theme"
     >
-      {theme === "dark" ? (
-        <MdOutlineLightMode size={22}/>
-      ) : (
-        <FiMoon size={22}/>
-      )}
+      {theme === "dark" ? <FiSun size={18}/> : <FiMoon size={18}/>}
     </button>
   );
 }
