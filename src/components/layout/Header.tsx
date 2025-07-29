@@ -15,11 +15,12 @@ const Header: React.FC = () => {
     { to: "/", label: "Home", match: "/" },
     { to: "/what-i-use", label: "What I Use", match: "/what-i-use" },
     {
-      to: "/my-qualifications",
-      label: "My Qualifications",
-      match: "/my-qualifications",
+      to: "/qualifications",
+      label: "Qualifications",
+      match: "/qualifications",
     },
-    { to: "/my-quotes", label: "My Quotes", match: "/my-quotes" },
+    { to: "/quotes", label: "Quotes", match: "/quotes" },
+    { to: "/blogs", label: "Blogs", match: "/blogs" },
   ];
 
   return (

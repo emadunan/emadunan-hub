@@ -1,0 +1,53 @@
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--text);
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  display: block;
+  background-color: var(--background-hover);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(var(--gray-rgb), 0.2);
+  transition: border 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  border: 1px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(var(--gray-rgb), 0.1);
+  transform: translateY(-2px);
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.excerpt {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 0.75rem;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: var(--gray);
+}

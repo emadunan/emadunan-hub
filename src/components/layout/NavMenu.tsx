@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -16,6 +16,14 @@ const NavMenu: FC<Props> = ({ links }) => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) return null;
+
   const handleToggle = () => setMenuOpen((prev) => !prev);
   const handleClose = () => setMenuOpen(false);
 
@@ -29,7 +37,10 @@ const NavMenu: FC<Props> = ({ links }) => {
 
       <div className={`${styles.drawer} ${menuOpen ? styles.open : ""}`}>
         {links.map(({ to, label, match }) => {
-          const isActive = pathname === match;
+          const isActive =
+            match === "/"
+              ? pathname === "/"
+              : pathname.startsWith(match);
 
           return (
             <Link

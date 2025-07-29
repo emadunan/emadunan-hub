@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@amen24/ui": "^1.0.4",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.4.4",
     "next": "15.4.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"

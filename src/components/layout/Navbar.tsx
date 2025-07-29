@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,11 +13,21 @@ interface Props {
 
 const Navbar: FC<Props> = ({ links }) => {
   const pathname = usePathname();
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) return null; // or a loader/spinner
 
   return (
     <nav className={styles.nav}>
       {links.map((link) => {
-        const isActive = pathname === link.match;
+        const isActive =
+          link.match === "/"
+            ? pathname === "/"
+            : pathname.startsWith(link.match);
 
         return (
           <Link
