@@ -13,6 +13,7 @@ const Header: React.FC = () => {
 
   const links: PageLink[] = [
     { to: "/", label: "Home", match: "/" },
+    { to: "/blogs", label: "Blogs", match: "/blogs" },
     { to: "/what-i-use", label: "What I Use", match: "/what-i-use" },
     {
       to: "/qualifications",
@@ -20,7 +21,6 @@ const Header: React.FC = () => {
       match: "/qualifications",
     },
     { to: "/quotes", label: "Quotes", match: "/quotes" },
-    { to: "/blogs", label: "Blogs", match: "/blogs" },
   ];
 
   return (
