@@ -1,20 +1,26 @@
-"use client"
+import MainContainer from '@/components/layout/MainContainer';
+import BlogRenderer from '@/components/blogs/BlogRenderer';
 
-import { MDXProvider } from '@mdx-js/react'
-import BlogPost from '@/components/blogs/content/show-git-branch-in-shell.mdx'
-import { mdxComponents } from '@/components/blogs/mdxComponents'
-import MainContainer from '@/components/layout/MainContainer'
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  return [
+    { slug: 'show-git-branch-in-shell' },
+  ];
+}
 
-export default function BlogPage() {
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params;
+
   return (
     <MainContainer>
-      <div style={{display: "flex", justifyContent: "center"}}>
-        <div style={{ maxWidth: "50rem" }}>
-          <MDXProvider components={mdxComponents}>
-            <BlogPost />
-          </MDXProvider>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <div style={{ maxWidth: '50rem' }}>
+          <BlogRenderer slug={slug} />
         </div>
       </div>
     </MainContainer>
-  )
-}
+  );
+};
