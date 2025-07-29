@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
-import styles from './page'
 import Footer from "@/components/layout/Footer";
 import Main from "@/components/layout/Main";
 import ThemeToggle from "@/components/ui/ThemeToggler";
