@@ -17,7 +17,7 @@ export default async function BlogPage({
   return (
     <MainContainer>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        <div style={{ maxWidth: '50rem' }}>
+        <div style={{ width: '100%', maxWidth: '50rem' }}>
           <BlogRenderer slug={slug} />
         </div>
       </div>
