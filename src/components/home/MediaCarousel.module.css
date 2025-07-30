@@ -1,0 +1,67 @@
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  padding: 12rem 1rem;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.card {
+  position: absolute;
+  width: 12rem;
+  height: 18rem;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: black;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  opacity: 0.3;
+  transition:
+    transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    opacity 0.5s ease,
+    z-index 0s step-end;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+.title {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+/* Positioning classes */
+.center {
+  transform: translateX(0) scale(1.2);
+  z-index: 3;
+  opacity: 1;
+}
+
+.left {
+  transform: translateX(-16rem) scale(0.9) rotateY(10deg);
+  z-index: 2;
+}
+
+.right {
+  transform: translateX(16rem) scale(0.9) rotateY(-10deg);
+  z-index: 2;
+}
+
+.hidden {
+  display: none;
+}
