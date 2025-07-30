@@ -1,7 +1,7 @@
 .heading {
   text-align: center;
   font-size: 1.85rem;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .carousel {

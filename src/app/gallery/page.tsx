@@ -1,8 +1,12 @@
+import PhotoGallery from '@/components/gallary/PhotoGallery';
+import MainContainer from '@/components/layout/MainContainer';
 import React from 'react';
 
 const GalleryPage: React.FC = () => {
   return (
-    <div>GalleryPage</div>
+    <MainContainer>
+      <PhotoGallery />
+    </MainContainer>
   )
 }
 
