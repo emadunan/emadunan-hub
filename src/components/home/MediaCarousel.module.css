@@ -4,7 +4,7 @@
   align-items: center;
   gap: 2rem;
   position: relative;
-  padding: 12rem 1rem;
+  padding: 15rem 1rem;
   overflow: hidden;
   perspective: 1000px;
 }
@@ -64,4 +64,61 @@
 
 .hidden {
   display: none;
+}
+
+@media(max-width: 48em) {
+  .left {
+    transform: translateX(-12rem) scale(0.9) rotateY(10deg);
+    z-index: 2;
+  }
+
+  .right {
+    transform: translateX(12rem) scale(0.9) rotateY(-10deg);
+    z-index: 2;
+  }
+}
+
+@media(max-width: 37.5em) {
+  .carousel {
+    padding: 8rem 1rem;
+  }
+
+  .card {
+    width: 8rem;
+    height: 12rem;
+  }
+
+  .left {
+    transform: translateX(-8rem) scale(0.9) rotateY(10deg);
+    z-index: 2;
+  }
+
+  .right {
+    transform: translateX(8rem) scale(0.9) rotateY(-10deg);
+    z-index: 2;
+  }
+}
+
+@media(max-width: 26em) {
+  .left {
+    transform: translateX(-6rem) scale(0.9) rotateY(10deg);
+    z-index: 2;
+  }
+
+  .right {
+    transform: translateX(6rem) scale(0.9) rotateY(-10deg);
+    z-index: 2;
+  }
+}
+
+@media(max-width: 22.5em) {
+  .left {
+    transform: translateX(-4rem) scale(0.9) rotateY(10deg);
+    z-index: 2;
+  }
+
+  .right {
+    transform: translateX(4rem) scale(0.9) rotateY(-10deg);
+    z-index: 2;
+  }
 }
