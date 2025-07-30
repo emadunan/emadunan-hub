@@ -49,19 +49,21 @@ const MediaCarousel = () => {
   };
 
   return (
-    <div className={styles.carousel}>
-      {/* <h2 style={{color: "#000"}}>Personal Picks</h2> */}
-      {items.map((item, index) => (
-        <div
-          key={item.title}
-          className={`${styles.card} ${getPosition(index)}`}
-          onClick={() => handleClick(index)}
-        >
-          <img src={item.image} alt={item.title} className={styles.image} />
-          <div className={styles.title}>{item.title}</div>
-        </div>
-      ))}
-    </div>
+    <>
+      <h2 className={styles.heading}>Personal Picks</h2>
+      <div className={styles.carousel}>
+        {items.map((item, index) => (
+          <div
+            key={item.title}
+            className={`${styles.card} ${getPosition(index)}`}
+            onClick={() => handleClick(index)}
+          >
+            <img src={item.image} alt={item.title} className={styles.image} />
+            <div className={styles.title}>{item.title}</div>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 
