@@ -1,0 +1,23 @@
+.galleryContainer {
+  column-count: 4;
+  column-gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+@media (max-width: 75em) {
+  .galleryContainer {
+    column-count: 3;
+  }
+}
+
+@media(max-width: 48em) {
+  .galleryContainer {
+    column-count: 2;
+  }
+}
+
+@media(max-width: 37.5em) {
+  .galleryContainer {
+    column-count: 1;
+  }
+}

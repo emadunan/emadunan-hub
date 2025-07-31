@@ -1,4 +1,4 @@
-import PhotoGallery from '@/components/gallary/PhotoGallery';
+import PhotoGallery from '@/components/gallary/MediaGallery';
 import MainContainer from '@/components/layout/MainContainer';
 import React from 'react';
 
