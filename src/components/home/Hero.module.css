@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 75rem;
   min-height: calc(100vh - 16rem);
   margin: 0 auto;
   flex-wrap: wrap;
@@ -32,21 +32,22 @@
   font-size: 1.25rem;
   line-height: 1.7;
   margin-bottom: 1rem;
-  max-width: 38rem;
+  max-width: 40rem;
   color: var(--text);
 }
 
 .subheading2 {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 2rem;
-  max-width: 38rem;
-  color: var(--gray-hover);
+  margin-bottom: .5rem;
+  max-width: 40rem;
+  color: var(--danger-hover);
 }
 
 .cta {
   background-color: var(--primary);
   color: var(--background);
+  margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
   border-radius: 2px;
   font-weight: 600;
