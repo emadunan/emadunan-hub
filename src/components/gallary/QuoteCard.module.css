@@ -1,7 +1,6 @@
 /* components/QuoteCard.module.css */
 .card {
   break-inside: avoid;
-  margin-bottom: 1.5rem;
   border-radius: 0.25rem;
   overflow: hidden;
   box-shadow: 0 4px 14px rgba(var(--primary-rgb), 0.2);

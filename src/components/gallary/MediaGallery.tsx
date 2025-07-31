@@ -1,50 +1,47 @@
-"use client"
-
-import Masonry from 'react-masonry-css';
-import styles from './MediaGallery.module.css';
-import { photos } from "@/data/photo.data";
-import { quotes } from "@/data/quote.data";
-import { music } from "@/data/music.data";
+import { Masonry } from 'masonic';
 import PhotoCard from './PhotoCard';
 import QuoteCard from './QuoteCard';
 import MusicCard from './MusicCard';
+import { photos } from '@/data/photo.data';
+import { quotes } from '@/data/quote.data';
+import { music } from '@/data/music.data';
 
-const MediaGallery: React.FC = () => {
-  const combined = [
-    ...photos.map((item) => ({ ...item, type: "photo" })),
-    ...quotes.map((item) => ({ ...item, type: "quote" })),
-    ...music.map((item) => ({ ...item, type: "music" })),
-  ];
+type CombinedItem = {
+  type: 'photo' | 'quote' | 'music';
+  data: any;
+};
 
-  const sorted = combined.sort((a, b) => a.order - b.order);
+function withType<T extends 'photo' | 'quote' | 'music', D>(type: T, data: D): CombinedItem {
+  return { type, data };
+}
 
-  const breakpointColumnsObj = {
-    default: 4,
-    1200: 3,
-    768: 2,
-    480: 1,
-  };
+const items: CombinedItem[] = [
+  ...photos.map(p => withType('photo', p)),
+  ...quotes.map(q => withType('quote', q)),
+  ...music.map(m => withType('music', m)),
+].sort((a, b) => a.data.order - b.data.order);
 
+export default function MediaGallery() {
   return (
     <Masonry
-      breakpointCols={breakpointColumnsObj}
-      className={styles.masonryGrid}
-      columnClassName={styles.masonryColumn}
-    >
-      {sorted.map((item, index) => {
+      items={items}
+      columnWidth={240}
+      columnGutter={24}
+      overscanBy={2}
+      itemKey={(item, index) => `${item.type}-${index}`}
+      render={({ index, data }) => {
+        const item = items[index];
         switch (item.type) {
-          case "photo":
-            return <PhotoCard key={index} item={item} />;
-          case "quote":
-            return <QuoteCard key={index} item={item} />;
-          case "music":
-            return <MusicCard key={index} item={item} />;
+          case 'photo':
+            return <PhotoCard item={item.data} />;
+          case 'quote':
+            return <QuoteCard item={item.data} />;
+          case 'music':
+            return <MusicCard item={item.data} />;
           default:
             return null;
         }
-      })}
-    </Masonry>
+      }}
+    />
   );
-};
-
-export default MediaGallery;
+}
