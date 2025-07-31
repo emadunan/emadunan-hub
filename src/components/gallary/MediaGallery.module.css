@@ -1,23 +1,14 @@
-.galleryContainer {
-  column-count: 4;
-  column-gap: 1.5rem;
-  padding: 2rem 0;
+.masonryGrid {
+  display: flex;
+  margin-left: -1.5rem; /* gutter size offset */
+  width: auto;
 }
 
-@media (max-width: 75em) {
-  .galleryContainer {
-    column-count: 3;
-  }
+.masonryColumn {
+  padding-left: 1.5rem; /* gutter size */
+  background-clip: padding-box;
 }
 
-@media(max-width: 48em) {
-  .galleryContainer {
-    column-count: 2;
-  }
-}
-
-@media(max-width: 37.5em) {
-  .galleryContainer {
-    column-count: 1;
-  }
+.masonryColumn > * {
+  margin-bottom: 1.5rem;
 }

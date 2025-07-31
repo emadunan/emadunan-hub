@@ -1,43 +1,49 @@
-import React from 'react';
+"use client"
+
+import Masonry from 'react-masonry-css';
 import styles from './MediaGallery.module.css';
-import { photos } from '@/data/photo.data';
-import { quotes } from '@/data/quote.data';
-import { music } from '@/data/music.data';
+import { photos } from "@/data/photo.data";
+import { quotes } from "@/data/quote.data";
+import { music } from "@/data/music.data";
 import PhotoCard from './PhotoCard';
 import QuoteCard from './QuoteCard';
 import MusicCard from './MusicCard';
 
-type MediaItem =
-  | { type: 'photo'; data: (typeof photos)[number] }
-  | { type: 'quote'; data: (typeof quotes)[number] }
-  | { type: 'music'; data: (typeof music)[number] };
-
 const MediaGallery: React.FC = () => {
-  // Merge and tag each item with its type
-  const combinedItems: MediaItem[] = [
-    ...photos.map((p) => ({ type: 'photo', data: p })),
-    ...quotes.map((q) => ({ type: 'quote', data: q })),
-    ...music.map((m) => ({ type: 'music', data: m })),
+  const combined = [
+    ...photos.map((item) => ({ ...item, type: "photo" })),
+    ...quotes.map((item) => ({ ...item, type: "quote" })),
+    ...music.map((item) => ({ ...item, type: "music" })),
   ];
 
-  // Sort by the shared `order` property (descending to show latest on top)
-  const sortedItems = combinedItems.sort((a, b) => a.data.order - b.data.order);
+  const sorted = combined.sort((a, b) => a.order - b.order);
+
+  const breakpointColumnsObj = {
+    default: 4,
+    1200: 3,
+    768: 2,
+    480: 1,
+  };
 
   return (
-    <div className={styles.galleryContainer}>
-      {sortedItems.map((item, index) => {
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className={styles.masonryGrid}
+      columnClassName={styles.masonryColumn}
+    >
+      {sorted.map((item, index) => {
         switch (item.type) {
-          case 'photo':
-            return <PhotoCard key={`photo-${index}`} item={item.data} />;
-          case 'quote':
-            return <QuoteCard key={`quote-${index}`} item={item.data} />;
-          case 'music':
-            return <MusicCard key={`music-${index}`} item={item.data} />;
+          case "photo":
+            return <PhotoCard key={index} item={item} />;
+          case "quote":
+            return <QuoteCard key={index} item={item} />;
+          case "music":
+            return <MusicCard key={index} item={item} />;
           default:
             return null;
         }
       })}
-    </div>
+    </Masonry>
   );
 };
 
