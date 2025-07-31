@@ -21,6 +21,19 @@ export const referencesData: Record<
         "A curated collection of popular icon sets (FontAwesome, MaterialIcons, Ionicons, and more) optimized for Expo and React Native.",
       link: "https://icons.expo.fyi/",
     },
+    {
+      title: "Google Play Console",
+      description:
+        "The primary distribution platform for Android apps, offering tools for publishing, monetization, analytics, and user acquisition through the Google Play Console.",
+      link: "https://play.google.com/console/",
+    },
+    {
+      title: "AppGallery Connect",
+      description:
+        "Huawei's developer platform for publishing and managing Android apps on AppGallery, including tools for distribution, monetization, and device optimization.",
+      link: "https://developer.huawei.com/consumer/en/services/appgallery/",
+    }
+
   ],
   Frontend: [
     {

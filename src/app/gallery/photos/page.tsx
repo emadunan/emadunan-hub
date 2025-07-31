@@ -1,14 +1,23 @@
 "use client"
 
 import { Masonry } from 'masonic';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { photos } from '@/data/photo.data';
 import PhotoCard from '@/components/gallary/PhotoCard';
 import MainContainer from '@/components/layout/MainContainer';
-
+import { ResizeObserver } from '@juggle/resize-observer';
 
 const PhotosPage = () => {
-  return (
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && !('ResizeObserver' in window)) {
+      (window as any).ResizeObserver = ResizeObserver;
+    }
+    setReady(true);
+  }, []);
+
+  return ready ? (
     <MainContainer>
       <Masonry
         items={photos}
@@ -19,7 +28,7 @@ const PhotosPage = () => {
         render={({ index, data }) => <PhotoCard item={data} />}
       />
     </MainContainer>
-  )
+  ) : null;
 }
 
 export default PhotosPage;
