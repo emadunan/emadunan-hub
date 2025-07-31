@@ -14,17 +14,17 @@ const items: MediaItem[] = [
   {
     title: "Photo Gallery",
     image: "/images/media/gallery.jpg",
-    href: "/gallery",
+    href: "/gallery/photos",
   },
   {
     title: "Favorite Music",
     image: "/images/media/music.jpg",
-    href: "/music",
+    href: "/gallery/music",
   },
   {
     title: "Quotes",
     image: "/images/media/quotes.jpg",
-    href: "/quotes",
+    href: "/gallery/quotes",
   },
 ];
 
