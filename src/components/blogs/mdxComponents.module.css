@@ -12,22 +12,6 @@
   word-break: break-word;
 }
 
-/* Code Block Wrapper */
-.block {
-  background-color: var(--background-hover);
-  color: var(--text);
-  padding: 1rem;
-  margin: 1.5rem 0;
-  border-radius: 2px;
-  overflow-x: auto;
-  font-family: 'Fira Code', monospace;
-  font-size: 0.9rem;
-  white-space: pre;
-  line-height: 1.6;
-  border: 1px solid rgba(var(--text-rgb), 0.1);
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
 .listUnordered,
 .listOrdered {
   margin-left: 1rem;
@@ -53,17 +37,4 @@
 
 .paragraph {
   margin: 2rem 0 1rem;
-}
-
-/* Dark theme adjustments (if not using data-theme scoped styles) */
-@media (prefers-color-scheme: dark) {
-  .block {
-    background-color: var(--background-hover);
-    color: var(--text);
-  }
-
-  .inlineCode {
-    background-color: var(--highlight);
-    color: var(--text);
-  }
 }
