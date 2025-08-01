@@ -7,6 +7,12 @@ export type BlogPost = {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "setup-ssh-key-authentication",
+    title: "How to Generate SSH Key Pairs and Use Them for Secure Authentication",
+    excerpt: "Learn how to create SSH keys, copy them to your server, and disable password-based login for better security.",
+    date: "2025-08-01"
+  },
+  {
     slug: 'show-git-branch-in-shell',
     title: 'Show Git Branch in Shell',
     excerpt: 'Enhance your terminal prompt by displaying the current Git branch.',
@@ -24,10 +30,5 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Step-by-step guide to installing Shadowsocks clients and connecting to your proxy server from mobile, desktop, and terminal environments.',
     date: '2025-08-01',
   },
-  // {
-  //   slug: "setup-ssh-key-authentication",
-  //   title: "How to Generate SSH Key Pairs and Use Them for Secure Authentication",
-  //   excerpt: "Learn how to create SSH keys, copy them to your server, and disable password-based login for better security.",
-  //   date: "2025-08-01"
-  // }
+
 ];
