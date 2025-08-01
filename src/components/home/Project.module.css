@@ -9,10 +9,12 @@
 .projectHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1.5rem 1.5rem 1rem;
 }
+
 
 .projectHeader h3 {
   font-size: 1.6rem;

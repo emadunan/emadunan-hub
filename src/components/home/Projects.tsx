@@ -32,7 +32,7 @@ const projects = [
     technologies: [
       "Next.js", "React", "Redux Toolkit", "NestJS", "TypeORM", "PostgreSQL",
       "Passport.js", "i18next", "React Native", "Expo",
-      "SQLite", "OpenAI API", "Sharp", "Multer", "JWT Auth", "Ubuntu","Nginx", "Github Actions"
+      "SQLite", "OpenAI API", "Sharp", "Multer", "JWT Auth", "Ubuntu", "Nginx", "Github Actions"
     ],
   },
   {
@@ -53,7 +53,7 @@ const projects = [
       "Public e-services for secure citizen interaction.",
     ],
     technologies: [
-      ".NET", "SQL Server", "Swift", "Java", "Android", "SharePoint",
+      "SQL Server", "SharePoint", ".NET", "IIS", "Javascript", "Typescript", "Angular", "Swift", "Java",
     ],
   },
   {
