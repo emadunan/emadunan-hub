@@ -4,6 +4,8 @@ import BlogRenderer from '@/components/blogs/BlogRenderer';
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return [
     { slug: 'show-git-branch-in-shell' },
+    { slug: 'setup-shadowsocks-libev-ubuntu-proxy-server' },
+    { slug: 'setup-shadowsocks-client-android-linux-windows' },
   ];
 }
 

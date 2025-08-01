@@ -38,5 +38,14 @@ export const mdxComponents: MDXComponents = {
     <p className={styles.paragraph}>
       {children}
     </p>
-  )
+  ),
+
+  img: ({ src, alt }) => (
+  <img
+    src={src}
+    alt={alt}
+    className={styles.responsiveImage}
+  />
+),
+
 }

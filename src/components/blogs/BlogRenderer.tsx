@@ -11,6 +11,8 @@ interface Props {
 
 const mdxMap: Record<string, () => Promise<any>> = {
   'show-git-branch-in-shell': () => import('./content/show-git-branch-in-shell.mdx'),
+  'setup-shadowsocks-libev-ubuntu-proxy-server': () => import('./content/setup-shadowsocks-libev-ubuntu-proxy-server.mdx'),
+  'setup-shadowsocks-client-android-linux-windows': () => import('./content/setup-shadowsocks-client-android-linux-windows.mdx'),
 };
 
 const BlogRenderer: FC<Props> = ({ slug }) => {
