@@ -83,6 +83,12 @@ const Footer: React.FC = () => {
           <strong>Location:</strong>
           <address>Egypt, Cairo</address>
         </li>
+        <li>
+          <strong>Résumé:</strong>{" "}
+          <a href="/EmadYounan-CV.pdf" download>
+            Download My CV (PDF)
+          </a>
+        </li>
       </ul>
     </footer>
   );
