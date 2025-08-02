@@ -269,6 +269,12 @@ export const referencesData: Record<
       link: "https://github.com/",
     },
     {
+      title: "GitGuardian",
+      description:
+        "A security tool that detects and prevents the exposure of secrets in source code. Ideal for scanning GitHub repositories and CI/CD pipelines.",
+      link: "https://github.com/GitGuardian/ggshield",
+    },
+    {
       title: "PM2",
       description: "Production process manager for Node.js applications.",
       link: "https://pm2.keymetrics.io/",
