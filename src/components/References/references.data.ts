@@ -453,6 +453,12 @@ export const referencesData: Record<
       link: "https://agilemanifesto.org/",
     },
     {
+      title: "IntelTechniques",
+      description:
+        "A resource hub for OSINT tools, techniques, and training by Michael Bazzell — featuring custom search tools, privacy advice, and investigative methods.",
+      link: "https://inteltechniques.com/",
+    },
+    {
       title: "Roadmap.sh",
       description:
         "Community-driven collection of comprehensive roadmaps, guides, and resources for developers in various domains.",
