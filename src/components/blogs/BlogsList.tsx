@@ -1,15 +1,17 @@
 import React from "react";
-import styles from "./BlogsList.module.css";
-import { blogPosts } from "./blogs.data";
+import { Masonry } from "masonic";
 import BlogCard from "./BlogCard";
+import { blogPosts } from "./blogs.data";
 
 const BlogsList: React.FC = () => {
   return (
-    <div className={styles.container}>
-      {blogPosts.map((q, index) => (
-        <BlogCard key={index} {...q} />
-      ))}
-    </div>
+    <Masonry
+      items={blogPosts} columnWidth={240}
+      columnGutter={24}
+      overscanBy={2}
+      itemKey={(item, index) => `${index}-${item.title}`}
+      render={({ index, data }) => <BlogCard key={index} {...data} />}
+    />
   );
 };
 

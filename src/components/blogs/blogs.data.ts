@@ -13,12 +13,6 @@ export const blogPosts: BlogPost[] = [
     date: "2025-08-01"
   },
   {
-    slug: 'show-git-branch-in-shell',
-    title: 'Show Git Branch in Shell',
-    excerpt: 'Enhance your terminal prompt by displaying the current Git branch.',
-    date: '2025-07-29',
-  },
-  {
     slug: 'setup-shadowsocks-libev-ubuntu-proxy-server',
     title: 'Set Up a Shadowsocks-libev Proxy Server on Ubuntu',
     excerpt: 'Learn how to install and configure a secure, high-performance proxy server using Shadowsocks-libev on a Debian-based (Ubuntu) VPS.',
@@ -30,5 +24,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Step-by-step guide to installing Shadowsocks clients and connecting to your proxy server from mobile, desktop, and terminal environments.',
     date: '2025-08-01',
   },
-
+    {
+    slug: 'show-git-branch-in-shell',
+    title: 'Show Git Branch in Shell',
+    excerpt: 'Enhance your terminal prompt by displaying the current Git branch.',
+    date: '2025-07-29',
+  },
 ];
