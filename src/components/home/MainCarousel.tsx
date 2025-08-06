@@ -2,15 +2,33 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import styles from "./MediaCarousel.module.css";
+import styles from "./MainCarousel.module.css";
 
-interface MediaItem {
+interface Item {
   title: string;
   image: string;
   href: string;
 }
 
-const items: MediaItem[] = [
+const navItems: Item[] = [
+  {
+    title: "Blogs",
+    image: "/images/blogs.jpg",
+    href: "/blogs",
+  },
+  {
+    title: "What I use",
+    image: "/images/what-i-use.jpg",
+    href: "/what-i-use",
+  },
+  {
+    title: "Qualifications",
+    image: "/images/qualifications.jpg",
+    href: "/qualifications",
+  },
+];
+
+const mediaItems: Item[] = [
   {
     title: "Photo Gallery",
     image: "/images/media/gallery.jpg",
@@ -28,7 +46,9 @@ const items: MediaItem[] = [
   },
 ];
 
-const MediaCarousel = () => {
+const items = navItems;
+
+const MainCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const router = useRouter();
 
@@ -50,7 +70,7 @@ const MediaCarousel = () => {
 
   return (
     <>
-      <h2 className={styles.heading}>Personal Picks</h2>
+      <h2 className={styles.heading}>Profession Picks</h2>
       <div className={styles.carousel}>
         {items.map((item, index) => (
           <div
@@ -67,4 +87,4 @@ const MediaCarousel = () => {
   );
 };
 
-export default MediaCarousel;
+export default MainCarousel;

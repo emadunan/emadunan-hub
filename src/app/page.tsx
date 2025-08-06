@@ -2,7 +2,7 @@ import Hero from "@/components/home/Hero";
 import Bio from "@/components/home/Bio";
 import Skills from "@/components/home/Skills";
 import Projects from "@/components/home/Projects";
-import MediaCarousel from "@/components/home/MediaCarousel";
+import MainCarousel from "@/components/home/MainCarousel";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Bio />
       <Skills />
       <Projects />
-      <MediaCarousel />
+      <MainCarousel />
     </div>
   );
 }
