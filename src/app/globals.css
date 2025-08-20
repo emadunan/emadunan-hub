@@ -60,6 +60,10 @@
   --color-designuiresources: #ffe4e1;
   --color-designuiresources-hover: #fbc4bc;
 
+  /* Maps / Geospatial */
+  --color-maps: #fef3c7;
+  --color-maps-hover: #fde68a;
+
   /* Backend */
   --color-backend: #dbeafe;
   --color-backend-hover: #bfdbfe;
@@ -160,6 +164,9 @@
 
   --color-designuiresources: #2e1f26;
   --color-designuiresources-hover: #472d3c;
+
+  --color-maps: #3a2d1f;
+  --color-maps-hover: #543e29;
 
   --color-backend: #1f2e42;
   --color-backend-hover: #2d3e5a;

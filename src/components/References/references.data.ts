@@ -162,6 +162,20 @@ export const referencesData: Record<
       link: "https://www.svgrepo.com/",
     },
   ],
+  "Maps / Geospatial": [
+    {
+      title: "Leaflet",
+      description:
+        "An open-source JavaScript library for interactive maps. Lightweight, mobile-friendly, extensible with plugins. Commonly used to display geospatial data in web apps.",
+      link: "https://leafletjs.com/",
+    },
+    {
+      title: "OpenStreetMap",
+      description:
+        "A collaborative project that creates a free, editable map of the world. Provides open geospatial data, widely used for mapping, navigation, and location-based services.",
+      link: "https://www.openstreetmap.org/",
+    },
+  ],
   Backend: [
     {
       title: "SQLite",
