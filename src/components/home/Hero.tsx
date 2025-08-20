@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
               📱 Published cross-platform apps on Google Play and AppGallery.
             </p>
 
-            <a href="#footer" className={styles.cta}>
+            <a href="#skills" className={styles.cta}>
               Let’s Work Together
             </a>
           </div>

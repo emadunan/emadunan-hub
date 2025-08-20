@@ -5,7 +5,7 @@ import MainContainer from "../layout/MainContainer";
 const Skills: React.FC = () => {
   return (
     <MainContainer>
-      <section className={styles.skills}>
+      <section className={styles.skills} id="skills">
         <h2>Technical Skills</h2>
 
         <div className={styles.grid}>
