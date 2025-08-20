@@ -81,6 +81,17 @@
   box-shadow: 0 6px 16px rgba(248, 113, 113, 0.25);
 }
 
+.category_mapsgeospatial {
+  background-color: var(--color-maps);
+  border-color: #d97706; /* warm amber-brown for earthy border */
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);
+}
+
+.category_mapsgeospatial:hover {
+  background-color: var(--color-maps-hover);
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.25);
+}
+
 .category_backend {
   background-color: var(--color-backend);
   border-color: #3b82f6;
