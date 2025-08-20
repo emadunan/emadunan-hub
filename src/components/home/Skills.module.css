@@ -13,7 +13,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   padding: 0 4rem 4rem 4rem;
 }
@@ -51,10 +51,15 @@
   font-size: 0.9rem;
 }
 
+@media (max-width: 75em) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  }
+}
+
 @media (max-width: 37.5em) {
   .grid {
     grid-template-columns: 1fr;
     padding: 0 2rem 2rem 2rem;
   }
 }
-

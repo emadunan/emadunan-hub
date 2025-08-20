@@ -17,8 +17,11 @@ const Hero: React.FC = () => {
             </p>
 
             <p className={styles.subheading2}>
-            📱 Registered Android Developer on Google Play and Huawei AppGallery, with experience publishing real-world mobile apps across multiple platforms.
-          </p>
+              🖥️ Full-stack deployment on Debian-based systems using NGINX, PostgreSQL, & PM2.
+            </p>
+            <p className={styles.subheading2}>
+              📱 Published cross-platform apps on Google Play and AppGallery.
+            </p>
 
             <a href="#footer" className={styles.cta}>
               Let’s Work Together

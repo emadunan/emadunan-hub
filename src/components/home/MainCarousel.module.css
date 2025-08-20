@@ -1,7 +1,8 @@
 .heading {
+  margin-top: 10rem;
   text-align: center;
   font-size: 1.85rem;
-  color: var(--accent);
+  color: var(--primary);
 }
 
 .carousel {
@@ -63,9 +64,17 @@
   z-index: 2;
 }
 
+.left:hover {
+  transform: translateX(-16rem) scale(0.95) rotateY(10deg);
+}
+
 .right {
   transform: translateX(16rem) scale(0.9) rotateY(-10deg);
   z-index: 2;
+}
+
+.right:hover {
+  transform: translateX(16rem) scale(0.95) rotateY(-10deg);
 }
 
 .hidden {

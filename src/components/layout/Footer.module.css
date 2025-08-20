@@ -39,6 +39,10 @@
   align-items: center;
 }
 
+.infoList li:last-child {
+  grid-column: span 3;
+}
+
 .infoList a {
   color: var(--accent);
   text-decoration: none;
@@ -64,10 +68,18 @@
   .infoList {
     grid-template-columns: 1fr 1fr;
   }
+
+  .infoList li:last-child {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 30rem) {
   .infoList {
     grid-template-columns: 1fr;
+  }
+
+  .infoList li:last-child {
+    grid-column: span 1;
   }
 }
