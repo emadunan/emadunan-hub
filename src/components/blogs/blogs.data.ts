@@ -36,4 +36,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: 'Learn how to deploy a self-hosted Git server with Gitea, Docker, and PostgreSQL, plus a full backup and restore strategy for disaster recovery.',
     date: '2025-09-17',
   },
+  {
+    slug: "wireguard-full-server-client-setup",
+    title: "Set Up a Secure WireGuard VPN Server and Clients on Ubuntu",
+    excerpt: "A complete, step-by-step guide to building a secure WireGuard VPN using a hub-and-spoke model, including key generation, routing, iptables forwarding, and scaling to multiple clients.",
+    date: "2026-01-17"
+  },
 ];

@@ -15,6 +15,7 @@ const mdxMap: Record<string, () => Promise<any>> = {
   'setup-shadowsocks-libev-ubuntu-proxy-server': () => import('./content/setup-shadowsocks-libev-ubuntu-proxy-server.mdx'),
   'setup-shadowsocks-client-android-linux-windows': () => import('./content/setup-shadowsocks-client-android-linux-windows.mdx'),
   'setup-ssh-key-authentication': () => import('./content/setup-ssh-key-authentication.mdx'),
+  'wireguard-full-server-client-setup': () => import('./content/wireguard-full-server-client-setup.mdx'),
 };
 
 const BlogRenderer: FC<Props> = ({ slug }) => {
