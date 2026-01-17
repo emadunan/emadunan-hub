@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
           <div className={styles.text}>
             <h1 className={styles.heading}>Hi, I'm Emad Younan</h1>
             <p className={styles.subheading1}>
-              Software Engineer with 7+ years of experience in building scalable web and cross-platform mobile applications. Skilled in TypeScript, React, React Native, NestJS, PostgreSQL, and MongoDB, with a strong focus on clean architecture, performance optimization, and maintainable code.
+              Software Engineer with 8+ years of experience in building scalable web and cross-platform mobile applications. Skilled in TypeScript, React, React Native, NestJS, PostgreSQL, and MongoDB, with a strong focus on clean architecture, performance optimization, and maintainable code.
             </p>
 
             <p className={styles.subheading2}>

@@ -7,41 +7,45 @@ const Bio: React.FC = () => {
     <MainContainer>
       <section className={styles.bio}>
         <h2>About Me</h2>
+
         <p>
-          I’m <strong>Emad Younan</strong>, a full-stack web developer from Egypt
-          with over 7 years of hands-on experience in JavaScript, TypeScript,
-          React, Next.js, NestJS, and PostgreSQL. I build elegant, performant, and
-          scalable applications for the modern web.
+          I’m <strong>Emad Younan</strong>, a software engineer from Egypt with over
+          8 years of professional experience designing and building reliable,
+          maintainable, and scalable software systems. My work spans backend and
+          frontend development, system automation, and production-grade application
+          architecture.
         </p>
+
         <p>
-          My journey has been shaped by deep faith, national pride, and
-          resilience. As a Christian in Egypt, I’ve encountered unique challenges,
-          but I’ve always chosen to respond with strength, compassion, and a
-          commitment to excellence. I love my country and believe in making a
-          positive difference—guided by the teachings of Jesus to overcome
-          adversity with grace and perseverance.
+          I work extensively with JavaScript and TypeScript, building web platforms
+          using React, Next.js, NestJS, and PostgreSQL. Beyond application development,
+          I have hands-on experience with Linux system administration, service
+          configuration, and Bash scripting for automation and operational efficiency.
         </p>
+
         <p>
-          I served as an officer in the Egyptian Police after graduating with a
-          degree in Information Systems. During my decade of service, I
-          specialized in technical infrastructure and systems administration. In
-          2017, I transitioned to web development, pouring years of intense study
-          into becoming a certified, skilled, and passionate developer.
+          I hold a degree in Information Systems and transitioned fully into software
+          engineering in 2017 after years of focused learning and practical
+          experience. I’ve earned multiple credentials from institutions such as
+          Harvard and Udacity, and I maintain a strong habit of continuous learning
+          across software design, systems, and security fundamentals.
         </p>
+
         <p>
-          I’ve earned multiple credentials from institutions like Harvard and
-          Udacity, and I now dedicate myself to solving problems with code,
-          delivering real-world value, and continuing my personal and professional
-          transformation. Along the way, I’ve also excelled in physical and
-          tactical challenges—achieving top ranks in police-level shooting
-          competitions.
+          My values are grounded in a conservative Christian faith—guided by ethics,
+          integrity, and accountability, yet not confined by traditions or rituals.
+          These principles influence how I work, collaborate, and approach
+          responsibility in both technical and human contexts.
         </p>
+
         <p>
-          Despite the discipline and intensity of my journey, I’m a deeply
-          sensitive, romantic soul. I’m currently single and open to new chapters
-          in both life and love.
+          I bring a calm, disciplined, and security-aware mindset to my work, with a
+          strong focus on clarity, ownership, and long-term maintainability. I enjoy
+          solving complex problems, improving systems incrementally, and building
+          software that stands up well in real-world environments.
         </p>
       </section>
+
     </MainContainer>
   );
 };
