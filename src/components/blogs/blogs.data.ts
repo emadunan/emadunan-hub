@@ -42,4 +42,10 @@ export const blogPosts: BlogPost[] = [
     excerpt: "A complete, step-by-step guide to building a secure WireGuard VPN using a hub-and-spoke model, including key generation, routing, iptables forwarding, and scaling to multiple clients.",
     date: "2026-01-17"
   },
+  {
+    slug: "create-self-hosted-github-actions-runner",
+    title: "Setting Up a Self-Hosted GitHub Actions Runner for Production",
+    excerpt: "Step-by-step guide to configure a secure, systemd-managed GitHub Actions runner for a production application.",
+    date: "2026-01-19"
+  },
 ];
