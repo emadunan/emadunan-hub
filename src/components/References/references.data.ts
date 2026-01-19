@@ -365,6 +365,12 @@ export const referencesData: Record<
       link: "https://github.com/shadowsocks/shadowsocks-libev",
     },
     {
+      title: "WireGuard",
+      description:
+        "A modern, high-performance VPN protocol focused on simplicity, strong cryptography, and minimal attack surface. Commonly used for secure point-to-point and site-to-site networking.",
+      link: "https://www.wireguard.com/",
+    },
+    {
       title: "OAuth 2.0",
       description:
         "An open standard for access delegation, widely used for secure authorization across web and mobile platforms.",
