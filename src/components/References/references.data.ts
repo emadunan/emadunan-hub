@@ -417,8 +417,13 @@ export const referencesData: Record<
       description:
         "A classic Unix/Linux tool that searches for known rootkits and suspicious system modifications. Lightweight and often used for periodic security checks.",
       link: "http://www.chkrootkit.org/"
-    }
-    ,
+    },
+    {
+      title: "Wazuh",
+      description:
+        "Open-source host-based intrusion detection and security monitoring platform. Wazuh collects and analyzes logs, monitors file integrity, detects malware and rootkits, and helps enforce compliance across Linux, Windows, and macOS systems.",
+      link: "https://wazuh.com/"
+    },
     {
       title: "OSINT Framework",
       description: "A structured collection of OSINT tools and resources, organized by categories to aid in intelligence gathering and investigations.",
