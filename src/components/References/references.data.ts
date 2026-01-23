@@ -421,7 +421,7 @@ export const referencesData: Record<
     {
       title: "Wazuh",
       description:
-        "Open-source host-based intrusion detection and security monitoring platform. Wazuh collects and analyzes logs, monitors file integrity, detects malware and rootkits, and helps enforce compliance across Linux, Windows, and macOS systems.",
+        "Open-source host-based intrusion detection and security monitoring platform. Wazuh analyzes logs, monitors file integrity, and detects malware and rootkits across Linux, Windows, and macOS systems.",
       link: "https://wazuh.com/"
     },
     {
