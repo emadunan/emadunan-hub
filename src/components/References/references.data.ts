@@ -389,6 +389,37 @@ export const referencesData: Record<
       link: "https://owasp.org/",
     },
     {
+      title: "ClamAV",
+      description:
+        "Open-source antivirus engine for detecting trojans, viruses, malware, and other threats on Linux and other platforms. Often used for email scanning and server protection.",
+      link: "https://www.clamav.net/"
+    },
+    {
+      title: "Linux Malware Detect (LMD)",
+      description:
+        "Malware scanner for Linux, designed to detect threats in shared hosting environments. Integrates with ClamAV and uses YARA rules for signature-based detection.",
+      link: "https://www.rfxn.com/projects/linux-malware-detect/"
+    },
+    {
+      title: "YARA",
+      description:
+        "Pattern-matching tool used for identifying and classifying malware based on textual or binary patterns. Frequently used with LMD and other malware detection frameworks.",
+      link: "https://virustotal.github.io/yara/"
+    },
+    {
+      title: "rkhunter",
+      description:
+        "Rootkit Hunter, a Unix-based tool that scans for rootkits, backdoors, and local exploits. Monitors system binaries and known rootkit signatures for threats.",
+      link: "http://rkhunter.sourceforge.net/"
+    },
+    {
+      title: "chkrootkit",
+      description:
+        "A classic Unix/Linux tool that searches for known rootkits and suspicious system modifications. Lightweight and often used for periodic security checks.",
+      link: "http://www.chkrootkit.org/"
+    }
+    ,
+    {
       title: "OSINT Framework",
       description: "A structured collection of OSINT tools and resources, organized by categories to aid in intelligence gathering and investigations.",
       link: "https://osintframework.com/"
