@@ -425,6 +425,12 @@ export const referencesData: Record<
       link: "https://wazuh.com/"
     },
     {
+      title: "NVD (NIST National Vulnerability Database)",
+      description:
+        "U.S. government vulnerability database providing CVE details, CVSS severity scores, and impact analysis for software and systems.",
+      link: "https://nvd.nist.gov/",
+    },
+    {
       title: "OSINT Framework",
       description: "A structured collection of OSINT tools and resources, organized by categories to aid in intelligence gathering and investigations.",
       link: "https://osintframework.com/"
