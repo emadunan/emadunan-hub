@@ -2,7 +2,7 @@
 set -e
 
 # Ensure Node.js tools are in the PATH
-export PATH=$HOME/.nvm/versions/node/v22.14.0/bin:$PATH
+export PATH=$HOME/.nvm/versions/node/v22.21.1/bin:$PATH
 
 pm2 delete emadunan-hub || true
 
