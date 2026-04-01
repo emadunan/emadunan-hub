@@ -17,9 +17,9 @@ const Bio: React.FC = () => {
 
         <p>
           I work extensively with JavaScript and TypeScript, building modern web platforms
-          using React, Next.js, NestJS, and PostgreSQL. I focus on clean system design,
-          scalable APIs, and practical engineering that performs well in real-world
-          production environments.
+          using React, Next.js, NestJS, and PostgreSQL. In addition, I use Python for backend
+          development, automation, and system integrations, especially in workflows that
+          require scripting, data processing, or infrastructure-level tooling.
         </p>
 
         <p>
