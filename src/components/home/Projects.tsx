@@ -6,19 +6,19 @@ import Project from "./Project";
 const projects = [
   {
     number: "1",
-    title: "Amen24.org Platform",
+    title: "Amen24.org – Multilingual Bible & Christian Library Platform",
     links: [
       {
         href: "https://github.com/emadunan/amen24",
         label: "💻 GitHub Repository",
       },
       {
-        href: "https://amen24.org",
-        label: "🌐 Live Website",
-      },
-      {
         href: "https://play.google.com/store/apps/details?id=yeshua.emadunan.amen24",
         label: "📱 Android App on Google Play",
+      },
+      {
+        href: "https://amen24.org",
+        label: "🌐 Live Website",
       },
     ],
     overview: `Amen24.org is a multilingual Christian platform that delivers searchable Bible content, a glossary of theological terms, and a curated digital library through a modern and accessible interface. Authenticated users can save reading progress, manage favorites, and customize their experience across devices. A dual-language display mode supports in-depth study and translation comparison. Built with scalability and internationalization in mind, the platform balances performance with ease of use. I serve as the sole developer and system architect, overseeing the entire technical stack, infrastructure, and ongoing development, while content is managed by a dedicated team of moderators.`,
@@ -37,6 +37,56 @@ const projects = [
   },
   {
     number: "2",
+    title: "Al-Atas.org – Family Heritage Platform",
+    links: [
+      {
+        href: "https://github.com/emadunan/alatas",
+        label: "💻 GitHub Repository",
+      },
+      {
+        href: "https://al-atas.org",
+        label: "🌐 Live Website",
+      },
+    ],
+    overview: `Al-atas.org is a private family heritage platform designed to digitally preserve and visualize the full genealogy of the Atas family through an interactive family tree interface. The system allows registered members to explore relationships, view individual profiles, and trace lineage across generations in a structured and user-friendly format. A secure admin panel enables authorized super users to manage the family database, including adding new members, updating personal information, and maintaining accurate family relationships. Built with a modern full-stack architecture, the platform focuses on data integrity, access control, and long-term maintainability, providing a reliable digital reference for a large and growing community.`,
+    features: [
+      "Interactive family tree visualization with hierarchical navigation.",
+      "Member profile pages with personal and relationship details.",
+      "Secure authentication system with role-based access control.",
+      "Admin panel for adding new members and editing genealogy records.",
+      "Relationship management (parent-child linking) with database validation.",
+    ],
+    technologies: [
+      "React", "Redux Toolkit", "NestJS", "TypeORM", "PostgreSQL", "Passport.js", "JWT Auth", "Ubuntu", "Nginx", "Github Actions"
+    ],
+  },
+  {
+    number: "3",
+    title: "Emadunan.com – Personal Portfolio",
+    links: [
+      {
+        href: "https://github.com/emadunan/emadunan-hub",
+        label: "💻 GitHub Repository",
+      },
+      {
+        href: "https://emadunan.com",
+        label: "🌐 Live Website",
+      },
+    ],
+    overview: `EmadUnan.com is my personal portfolio and professional showcase, designed to highlight my experience, skills, and technical work in a modern, responsive web interface. Built with Next.js and TypeScript, the site presents my background, a curated list of projects, selected blog posts, and contact information in a clean and accessible layout. With a focus on performance, responsive design, and semantic structure, the portfolio serves as both a personal brand platform and a technical demonstration of my frontend engineering capabilities. I handled the full design and development, optimizing for SEO and usability across devices.`,
+    features: [
+      "Responsive and modern UI displaying skills, experience, and projects.",
+      "Next.js-powered static site with optimized performance and routing.",
+      "Contact section with accessible email and social media links.",
+      "SEO-friendly structure with metadata, optimized assets, and clean markup.",
+      "Showcased professional blog and qualifications.",
+    ],
+    technologies: [
+      "Next.js", "React", "TypeScript", "CSS Modules", "SEO Optimization", "Responsive Design", "Github Actions", "Ubuntu", "Nginx"
+    ],
+  },
+  {
+    number: "4",
     title: "MOI.gov.eg – Egyptian Ministry of Interior Portal",
     links: [
       {
@@ -53,11 +103,11 @@ const projects = [
       "Public e-services for secure citizen interaction.",
     ],
     technologies: [
-      "SQL Server", "SharePoint", ".NET", "IIS", "Javascript", "Typescript", "Angular", "Swift", "Java",
+      "SQL Server", "SharePoint", ".NET", "IIS", "Javascript", "Typescript", "Angular", "C#", "Swift", "Java", "Windows Server"
     ],
   },
   {
-    number: "3",
+    number: "5",
     title: "Confidential Police Systems",
     links: [],
     overview: `Confidential internal systems developed for law enforcement agencies to manage secure operational and administrative processes. These platforms support mission-critical functions such as case handling, personnel workflows, and internal communications — all under strict national security protocols. While the technical details remain classified, my role included architecting and developing components within highly secure environments, adhering to government standards for data protection, access control, and system resilience.`,
