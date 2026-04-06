@@ -50,11 +50,11 @@ const projects = [
     ],
     overview: `Al-atas.org is a private family heritage platform designed to digitally preserve and visualize the full genealogy of the Atas family through an interactive family tree interface. The system allows registered members to explore relationships, view individual profiles, and trace lineage across generations in a structured and user-friendly format. A secure admin panel enables authorized super users to manage the family database, including adding new members, updating personal information, and maintaining accurate family relationships. Built with a modern full-stack architecture, the platform focuses on data integrity, access control, and long-term maintainability, providing a reliable digital reference for a large and growing community.`,
     features: [
-      "Interactive family tree visualization with hierarchical navigation.",
-      "Member profile pages with personal and relationship details.",
-      "Secure authentication system with role-based access control.",
-      "Admin panel for adding new members and editing genealogy records.",
-      "Relationship management (parent-child linking) with database validation.",
+      "Interactive family tree with hierarchical navigation.",
+      "Member profiles showing personal and relationship info.",
+      "Secure auth system with role-based access control.",
+      "Admin panel to add/edit members and genealogy data.",
+      "Manage parent-child links with database validation.",
     ],
     technologies: [
       "React", "Redux Toolkit", "NestJS", "TypeORM", "PostgreSQL", "Passport.js", "JWT Auth", "Ubuntu", "Nginx", "Github Actions"
@@ -75,10 +75,10 @@ const projects = [
     ],
     overview: `EmadUnan.com is my personal portfolio and professional showcase, designed to highlight my experience, skills, and technical work in a modern, responsive web interface. Built with Next.js and TypeScript, the site presents my background, a curated list of projects, selected blog posts, and contact information in a clean and accessible layout. With a focus on performance, responsive design, and semantic structure, the portfolio serves as both a personal brand platform and a technical demonstration of my frontend engineering capabilities. I handled the full design and development, optimizing for SEO and usability across devices.`,
     features: [
-      "Responsive and modern UI displaying skills, experience, and projects.",
-      "Next.js-powered static site with optimized performance and routing.",
-      "Contact section with accessible email and social media links.",
-      "SEO-friendly structure with metadata, optimized assets, and clean markup.",
+      "Responsive UI showing skills, experience, and projects.",
+      "Next.js static site with optimized routing and speed.",
+      "Contact section with email and social links.",
+      "SEO-friendly structure with clean markup and assets.",
       "Showcased professional blog and qualifications.",
     ],
     technologies: [
@@ -108,6 +108,25 @@ const projects = [
   },
   {
     number: "5",
+    title: "Internal Secure Git Server & DevOps Automation",
+    links: [],
+    overview: `Built a centralized internal Git server using Gitea and Docker on Ubuntu, transforming 
+isolated developer workflows into a secure, collaborative version control environment. Automated 
+daily backups via Bash + cron and validated disaster recovery by restoring all repositories to a test server. 
+Applied Agile concepts using GitHub Projects to track user stories, milestones, and team organization.`,
+    features: [
+      "Secure internal Git server for centralized collaboration.",
+      "RBAC for organizations and teams controlling access.",
+      "Automated daily backups with disaster recovery drills.",
+      "Track Agile stories and milestones using GitHub Projects.",
+      "Dockerized deployment on Ubuntu for scalable operations."
+    ],
+    technologies: [
+      "Git", "Gitea", "Docker", "Ubuntu", "Bash", "Cron", "RBAC", "CI/CD"
+    ],
+  },
+  {
+    number: "6",
     title: "Confidential Police Systems",
     links: [],
     overview: `Confidential internal systems developed for law enforcement agencies to manage secure operational and administrative processes. These platforms support mission-critical functions such as case handling, personnel workflows, and internal communications — all under strict national security protocols. While the technical details remain classified, my role included architecting and developing components within highly secure environments, adhering to government standards for data protection, access control, and system resilience.`,

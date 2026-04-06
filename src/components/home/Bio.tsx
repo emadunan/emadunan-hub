@@ -10,7 +10,7 @@ const Bio: React.FC = () => {
 
         <p>
           I’m <strong>Emad Younan</strong>, a software engineer from Egypt with over
-          8 years of professional experience building reliable, maintainable, and scalable
+          9 years of professional experience building reliable, maintainable, and scalable
           software systems. My work spans backend and frontend development, system automation,
           and production-grade application architecture.
         </p>
