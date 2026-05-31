@@ -365,6 +365,12 @@ export const referencesData: Record<
       link: "https://github.com/shadowsocks/shadowsocks-libev",
     },
     {
+      title: "WireGuard",
+      description:
+        "A modern, high-performance VPN protocol focused on simplicity, strong cryptography, and minimal attack surface. Commonly used for secure point-to-point and site-to-site networking.",
+      link: "https://www.wireguard.com/",
+    },
+    {
       title: "OAuth 2.0",
       description:
         "An open standard for access delegation, widely used for secure authorization across web and mobile platforms.",
@@ -381,6 +387,48 @@ export const referencesData: Record<
       description:
         "Open Web Application Security Project – web app security best practices.",
       link: "https://owasp.org/",
+    },
+    {
+      title: "ClamAV",
+      description:
+        "Open-source antivirus engine for detecting trojans, viruses, malware, and other threats on Linux and other platforms. Often used for email scanning and server protection.",
+      link: "https://www.clamav.net/"
+    },
+    {
+      title: "Linux Malware Detect (LMD)",
+      description:
+        "Malware scanner for Linux, designed to detect threats in shared hosting environments. Integrates with ClamAV and uses YARA rules for signature-based detection.",
+      link: "https://www.rfxn.com/projects/linux-malware-detect/"
+    },
+    {
+      title: "YARA",
+      description:
+        "Pattern-matching tool used for identifying and classifying malware based on textual or binary patterns. Frequently used with LMD and other malware detection frameworks.",
+      link: "https://virustotal.github.io/yara/"
+    },
+    {
+      title: "rkhunter",
+      description:
+        "Rootkit Hunter, a Unix-based tool that scans for rootkits, backdoors, and local exploits. Monitors system binaries and known rootkit signatures for threats.",
+      link: "http://rkhunter.sourceforge.net/"
+    },
+    {
+      title: "chkrootkit",
+      description:
+        "A classic Unix/Linux tool that searches for known rootkits and suspicious system modifications. Lightweight and often used for periodic security checks.",
+      link: "http://www.chkrootkit.org/"
+    },
+    {
+      title: "Wazuh",
+      description:
+        "Open-source host-based intrusion detection and security monitoring platform. Wazuh analyzes logs, monitors file integrity, and detects malware and rootkits across Linux, Windows, and macOS systems.",
+      link: "https://wazuh.com/"
+    },
+    {
+      title: "NVD (NIST National Vulnerability Database)",
+      description:
+        "U.S. government vulnerability database providing CVE details, CVSS severity scores, and impact analysis for software and systems.",
+      link: "https://nvd.nist.gov/",
     },
     {
       title: "OSINT Framework",

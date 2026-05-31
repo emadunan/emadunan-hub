@@ -9,6 +9,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
     { slug: 'setup-self-hosted-git-server-with-gitea' },
     { slug: 'setup-shadowsocks-libev-ubuntu-proxy-server' },
     { slug: 'setup-shadowsocks-client-android-linux-windows' },
+    { slug: 'create-self-hosted-github-actions-runner' },
   ];
 }
 

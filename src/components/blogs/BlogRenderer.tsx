@@ -16,6 +16,7 @@ const mdxMap: Record<string, () => Promise<any>> = {
   'setup-shadowsocks-client-android-linux-windows': () => import('./content/setup-shadowsocks-client-android-linux-windows.mdx'),
   'setup-ssh-key-authentication': () => import('./content/setup-ssh-key-authentication.mdx'),
   'wireguard-full-server-client-setup': () => import('./content/wireguard-full-server-client-setup.mdx'),
+  'create-self-hosted-github-actions-runner': () => import('./content/create-self-hosted-github-actions-runner.mdx'),
 };
 
 const BlogRenderer: FC<Props> = ({ slug }) => {

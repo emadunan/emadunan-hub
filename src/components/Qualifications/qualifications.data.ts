@@ -46,6 +46,7 @@ export const qualifications = [
     "title": "Bachelor's Degree in Information Systems",
     "institution": "Zagazig University, Egypt",
     "location": "Egypt",
-    "year": "Graduated: 2006"
+    "year": "Graduated: 2006",
+    "link": "/qualifications/bachelor"
   }
 ]
