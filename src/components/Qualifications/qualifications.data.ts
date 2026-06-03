@@ -1,5 +1,12 @@
 export const qualifications = [
   {
+    "type": "Certification",
+    "title": "Mathematics for Machine Learning and Data Science",
+    "institution": "Coursera",
+    "year": "2026",
+    "link": "https://coursera.org/share/01842955f1078ee537ab823b4bb5b780"
+  },
+  {
     "type": "Nanodegree",
     "title": "React Development Cross-Skilling",
     "institution": "Udacity",
